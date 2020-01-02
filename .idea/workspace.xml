@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="580f4825-abf8-4a6c-831a-317516d7fec1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\MavenRepository" />
+        <option name="userSettingsFile" value="C:\Users\tu\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1UYImMoeBbN3TfhyJCQYHTAM4jv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hadoop" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2916053" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RunManager" selected="Application.CronScheduler">
+    <configuration name="CronScheduler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bqs.CronScheduler" />
+      <module name="cdhAgent" />
+      <option name="VM_PARAMETERS" value="-Dlog4j.configuration=src/main/resources/log4j.properties" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bqs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bqs.KafkaDaoImpl" />
+      <module name="cdhAgent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bqs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="handle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bqs.handle" />
+      <module name="cdhAgent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bqs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CronScheduler" />
+      <item itemvalue="Application.handle" />
+      <item itemvalue="Application.KafkaDaoImpl" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CronScheduler" />
+        <item itemvalue="Application.handle" />
+        <item itemvalue="Application.KafkaDaoImpl" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="580f4825-abf8-4a6c-831a-317516d7fec1" name="Default Changelist" comment="" />
+      <created>1575527259092</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575527259092</updated>
+      <workItem from="1575527263083" duration="5364000" />
+      <workItem from="1575532829674" duration="5572000" />
+      <workItem from="1575602700498" duration="7517000" />
+      <workItem from="1575862820324" duration="2665000" />
+      <workItem from="1575873684264" duration="376000" />
+      <workItem from="1576150145510" duration="1473000" />
+      <workItem from="1576152721306" duration="15000" />
+      <workItem from="1576288878510" duration="1166000" />
+      <workItem from="1576291103569" duration="634000" />
+      <workItem from="1576489659393" duration="637000" />
+      <workItem from="1576585259715" duration="8000" />
+      <workItem from="1576830273135" duration="1959000" />
+      <workItem from="1577083062626" duration="51000" />
+      <workItem from="1577260650252" duration="6923000" />
+      <workItem from="1577340135973" duration="32642000" />
+      <workItem from="1577673334666" duration="9201000" />
+      <workItem from="1577931640846" duration="115000" />
+      <workItem from="1577945326419" duration="3034000" />
+      <workItem from="1577948535673" duration="705000" />
+      <workItem from="1577949263027" duration="547000" />
+      <workItem from="1577949830267" duration="1037000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="672" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577948098921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577948098921" />
+    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1577434607987">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1577434607987" />
+    <state x="739" y="378" width="441" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1576290010708">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="378" width="441" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1576290010708" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577947688294">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577947688294" />
+    <state x="734" y="261" key="FileChooserDialogImpl" timestamp="1577083111026">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="734" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577083111026" />
+    <state width="1877" height="177" key="GridCell.Tab.0.bottom" timestamp="1577949245492">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="177" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577949245492" />
+    <state width="1877" height="177" key="GridCell.Tab.0.center" timestamp="1577949245492">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="177" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577949245492" />
+    <state width="1877" height="177" key="GridCell.Tab.0.left" timestamp="1577949245492">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="177" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577949245492" />
+    <state width="1877" height="177" key="GridCell.Tab.0.right" timestamp="1577949245492">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="177" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577949245492" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1577931365404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577931365404" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1577931365404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577931365404" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1577931365404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577931365404" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1577931365404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577931365404" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1577949903448">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577949903448" />
+    <state x="644" y="204" key="new project wizard" timestamp="1577945515386">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="644" y="204" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1577945515386" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1577417939875">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577417939875" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1575615544745">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575615544745" />
+  </component>
+</project>
