@@ -8,8 +8,6 @@ import javafx.util.Pair;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,7 +16,6 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class HandleJob implements Job {
-    private static final Logger LOG = LoggerFactory.getLogger(HandleJob.class);
 
     private final static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     private HostsResourceApi hostsResourceApi = null;
@@ -64,7 +61,6 @@ public class HandleJob implements Job {
         Date now = new Date();
         String currentDate = sdf.format(now);
         System.out.println("现在时间是："+currentDate+"：开始执行任务");
-        LOG.info("现在时间是："+currentDate+"：开始执行任务");
 
         Map<String, ApiHost> hostMap = new HashMap<String, ApiHost>();
         ApiHostList apiHosts = hostsResourceApi.readHosts("summary");
@@ -91,18 +87,13 @@ public class HandleJob implements Job {
                             String apiInfo = hostMap.get(apiRole.getHostRef().getHostId()).getIpAddress() + ":" + apiRole.getType();
 
                             Integer count = Frequency.frequencyMap.get(apiInfo);
-                            System.out.println("count:" + count);
                             if (count == null) count = 0;
                             if (count != 0) {
-                                LOG.warn(apiInfo + "Failed");
-                                System.out.println(apiInfo + "Failed");
+                                System.out.println(apiInfo + " restart failed, because it has been restarted");
                             } else {
-                                System.out.println(apiInfo);
-                                LOG.info(apiInfo);
+                                System.out.println(apiInfo + " is restarting");
                                 Frequency.frequencyMap.put(apiInfo, count + 1);
-                                System.out.println("cishu" + Frequency.frequencyMap.get(apiInfo));
                                 Frequency.intervalMap.put(apiInfo, now.getTime());
-                                System.out.println(apiInfo + ":" + now.getTime());
                                 Frequency.queue.add(new Pair<>(now.getTime(), apiInfo));
                                 body.addItemsItem(apiRole.getName());
                             }
@@ -114,13 +105,10 @@ public class HandleJob implements Job {
         }
         while(!Frequency.queue.isEmpty()) {
             Pair<Long, String> psl = Frequency.queue.peek();
-            System.out.println("now time:" + now.getTime() + "  queue time:" + psl.getKey());
-            System.out.println("szie:" + Frequency.queue.size());
             //10 分钟内重启一次
             if (now.getTime() - psl.getKey() >= 600000) {
-                System.out.println("now time:" + now.getTime() + "  queue time:" + psl.getKey() + ": 差值"+ (now.getTime() - psl.getKey()));
                 if (now.getTime() - Frequency.intervalMap.get(psl.getValue()) >= 600000) {
-                    System.out.println("reomve " + psl.getValue());
+                    System.out.println("More than 10 minutes from the last restart, remove the "+ psl.getValue() + " to release the limit");
                     Frequency.frequencyMap.remove(psl.getValue());
                     Frequency.intervalMap.remove(psl.getValue());
                 }
@@ -137,7 +125,7 @@ public class HandleJob implements Job {
             handle();
         } catch (Exception e) {
             e.printStackTrace();
-            throw new JobExecutionException("handleJob 作业失败");
+            throw new JobExecutionException("handleJob failed");
         }
     }
 }

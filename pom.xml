@@ -27,16 +27,6 @@
             <artifactId>quartz</artifactId>
             <version>2.3.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.25</version>
-        </dependency>
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -63,6 +53,7 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.1</version>
                     <configuration>
+                        <!-- jdk 版本 -->
                         <source>1.8</source>
                         <target>1.8</target>
                         <encoding>utf-8</encoding>
